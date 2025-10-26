@@ -1,0 +1,774 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #1d2228;
+    background-color: #ffffff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    display: block;
+    line-height: 0;
+    margin-right: auto;
+    margin-left: -333px;
+}
+
+.logo img {
+    height: 210px;
+    width: auto;
+    display: block;
+    margin: -20px 0 -20px 0;
+    padding: 0;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    width: 100%;
+    height: 80px;
+}
+
+header {
+    background-color: #ffffff;
+    padding: 10px 0;
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+header ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+header li a {
+    color: #1d2228;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+}
+
+header li a:hover {
+    color: #1a130f;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.header-phone-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    color: white;
+    padding: 0.5rem 0.8rem;
+    border-radius: 25px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+    border: none;
+    white-space: nowrap;
+    cursor: default;
+    min-width: 40px;
+    margin-right: -333px;
+    height: 40px;
+}
+
+@media (max-width: 768px) {
+    header ul {
+        gap: 1rem;
+    }
+    
+    header li a {
+        font-size: 0.8rem;
+    }
+    
+    .header-phone-button {
+        padding: 0.4rem 0.7rem;
+        font-size: 1.1rem;
+        min-width: 35px;
+        height: 35px;
+    }
+}
+
+.hero {
+    background-image: url('image/mechanic-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.hero-content {
+    background: rgba(255, 255, 255, 0.7);
+    padding: 2.5rem;
+    border-radius: 10px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    max-width: 650px;
+    max-height: 4000px;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+.hero h1 {
+    color: #1d2228;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.opening-hours {
+    margin-bottom: 2rem;
+}
+
+.opening-hours p {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+    font-weight: 500;
+}
+
+.phone-button {
+    display: inline-block;
+    background: #000000;
+    color: white;
+    text-decoration: none;
+    padding: 0.8rem 2rem;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(49, 48, 48, 0.3);
+    border: none;
+    cursor: pointer;
+}
+
+.phone-button:hover {
+    background: #000000;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(14, 13, 13, 0.4);
+}
+
+.summer-service {
+    background-color: #000000;
+    padding: 2.5rem 0;
+    text-align: center;
+}
+
+.summer-service h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.highlight {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 0.5rem 1.5rem;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.beni-service-section {
+    padding: 80px 0;
+    background: #ffffff;
+}
+
+.beni-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 0;
+}
+
+.beni-text-column {
+    flex: 1;
+    padding: 40px;
+}
+
+.beni-content-wrapper {
+    max-width: 500px;
+}
+
+.beni-heading {
+    font-size: 28px;
+    font-weight: 700;
+    color: #333333;
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.beni-text-content {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666666;
+}
+
+.beni-text-content p {
+    margin-bottom: 20px;
+}
+
+.beni-text-content strong {
+    color: #333333;
+    font-weight: 600;
+}
+
+.beni-image-column {
+    flex: 1;
+}
+
+.beni-image-wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+.beni-service-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+    .beni-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .beni-text-column {
+        padding: 20px;
+        order: 2;
+    }
+    
+    .beni-image-column {
+        order: 1;
+    }
+    
+    .beni-heading {
+        font-size: 24px;
+    }
+    
+    .beni-service-image {
+        height: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .beni-service-section {
+        padding: 40px 0;
+    }
+    
+    .beni-text-column {
+        padding: 15px;
+    }
+    
+    .beni-heading {
+        font-size: 22px;
+    }
+    
+    .beni-text-content {
+        font-size: 14px;
+    }
+}
+
+.contacts {
+    background-color: #000000;
+    color: white;
+    padding: 2.5rem 0;
+    text-align: center;
+}
+
+.contacts h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.company-info h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.address {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+footer {
+    background-color: #1a3a5f;
+    color: white;
+    padding: 2rem 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.footer-contact h3,
+.footer-hours h3 {
+    margin-bottom: 1rem;
+    color: #fb8122;
+}
+
+.copyright {
+    text-align: center;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255,255,255,0.2);
+}
+
+@media (max-width: 768px) {
+    .beni-service-section {
+        padding: 40px 0;
+    }
+    
+    .beni-container {
+        flex-direction: column;
+        gap: 0;
+    }
+    
+    .beni-text-column {
+        padding: 20px;
+        order: 2;
+    }
+    
+    .beni-image-column {
+        order: 1;
+        padding: 0 20px;
+    }
+    
+    .beni-heading {
+        font-size: 24px;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    
+    .beni-text-content {
+        font-size: 14px;
+        text-align: center;
+    }
+    
+    .beni-service-image {
+        height: 250px;
+        border-radius: 5px;
+    }
+    
+    .beni-content-wrapper {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .beni-service-section {
+        padding: 30px 0;
+    }
+    
+    .beni-text-column {
+        padding: 15px;
+    }
+    
+    .beni-image-column {
+        padding: 0 15px;
+    }
+    
+    .beni-heading {
+        font-size: 22px;
+        margin-bottom: 12px;
+    }
+    
+    .beni-text-content {
+        font-size: 13px;
+        line-height: 1.5;
+    }
+    
+    .beni-text-content p {
+        margin-bottom: 15px;
+    }
+    
+    .beni-service-image {
+        height: 200px;
+    }
+}
+
+@media (max-width: 360px) {
+    .beni-service-section {
+        padding: 20px 0;
+    }
+    
+    .beni-heading {
+        font-size: 20px;
+    }
+    
+    .beni-text-content {
+        font-size: 12px;
+    }
+    
+    .beni-service-image {
+        height: 180px;
+    }
+}
+
+.palvelut-content-section {
+    padding: 80px 0;
+    background: #ffffff;
+    min-height: calc(100vh - 80px);
+}
+
+.palvelut-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+    display: flex;
+    align-items: flex-start;
+    gap: 60px;
+}
+
+.palvelut-text-column {
+    flex: 1;
+}
+
+.palvelut-text-column h1 {
+    font-size: 36px;
+    color: #1d2228;
+    margin-bottom: 25px;
+    text-align: left;
+    font-weight: 700;
+    line-height: 1.1;
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+.palvelut-text-content {
+    font-size: 17px;
+    line-height: 1.3;
+    color: #333333;
+}
+
+.palvelut-text-content p {
+    margin-bottom: 2px;
+}
+
+.palvelut-text-content strong {
+    color: #1d2228;
+    font-weight: 600;
+}
+
+.palvelut-text-content ul {
+    list-style: none;
+    padding: 0;
+    margin: -150px 0;
+}
+
+.palvelut-text-content li {
+    padding: 5px 0;
+    font-size: 16px;
+    color: #333333;
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 5px;
+    font-family: 'Roboto', Arial, sans-serif;
+    line-height: 1.4;
+}
+
+.palvelut-text-content li:before {
+    content: "-";
+    color: #333333;
+    font-weight: normal;
+    position: absolute;
+    left: 0;
+    top: 8px;
+    font-size: 16px;
+}
+
+.palvelut-image-column {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.palvelut-service-image {
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .palvelut-content-section {
+        padding: 40px 0;
+    }
+    
+    .palvelut-container {
+        flex-direction: column;
+        gap: 30px;
+        padding: 0 20px;
+    }
+    
+    .palvelut-text-column h1 {
+        font-size: 28px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    
+    .palvelut-text-content {
+        text-align: center;
+    }
+    
+    .palvelut-text-content li {
+        font-size: 15px;
+        padding: 6px 0;
+        padding-left: 18px;
+        text-align: left;
+    }
+    
+    .palvelut-service-image {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .palvelut-content-section {
+        padding: 30px 0;
+    }
+    
+    .palvelut-text-column h1 {
+        font-size: 24px;
+    }
+    
+    .palvelut-text-content {
+        font-size: 14px;
+    }
+    
+    .palvelut-text-content li {
+        font-size: 14px;
+    }
+    
+    .palvelut-service-image {
+        max-width: 300px;
+    }
+}
+
+.palvelut-text-content ul {
+    margin-top: 10px;
+}
+
+.palvelut-text-content p:last-of-type {
+    margin-bottom: 15px;
+}
+
+.palvelut-text-content li:last-child {
+    margin-bottom: 0;
+}
+
+.service-card h3 {
+    color: #1d2228;
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 1000;
+}
+
+.service-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.service-card li {
+    padding: 1px 0;
+    position: relative;
+    padding-left: 13px;
+    margin-bottom: 2px;
+}
+
+.service-info h3 {
+    color: #1d2228;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+.service-info p {
+    margin: 5;
+    font-size: 16px;
+}
+
+.beni-heading {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+/* Медіа-запит для планшетів */
+@media (max-width: 1024px) {
+    header nav {
+        padding: 0 15px;
+        height: 70px;
+    }
+    
+    .logo img {
+        height: 50px;
+        margin: 0;
+    }
+    
+    header ul {
+        gap: 1.5rem;
+    }
+    
+    header li a {
+        font-size: 0.8rem;
+    }
+}
+
+/* Медіа-запит для мобільних */
+@media (max-width: 768px) {
+    header nav {
+        flex-wrap: wrap;
+        height: auto;
+        padding: 10px 15px;
+    }
+    
+    .logo {
+        margin-left: 0;
+        order: 1;
+        flex: 0 0 auto;
+    }
+    
+    .logo img {
+        height: 45px;
+    }
+    
+    header ul {
+        order: 3;
+        flex: 1 1 100%;
+        justify-content: center;
+        margin-top: 10px;
+        gap: 1rem;
+    }
+    
+    header li a {
+        font-size: 0.75rem;
+        white-space: nowrap;
+    }
+    
+    .header-right {
+        order: 2;
+        margin-right: 0;
+    }
+    
+    .header-phone-button {
+        margin-right: 0;
+        min-width: 35px;
+        height: 35px;
+        font-size: 1rem;
+        padding: 0.4rem 0.6rem;
+    }
+}
+
+/* Для дуже маленьких екранів */
+@media (max-width: 480px) {
+    header ul {
+        gap: 0.8rem;
+        flex-wrap: wrap;
+    }
+    
+    header li a {
+        font-size: 0.7rem;
+    }
+    
+    .logo img {
+        height: 40px;
+    }
+    
+    .header-phone-button {
+        min-width: 30px;
+        height: 30px;
+        font-size: 0.9rem;
+        padding: 0.3rem 0.5rem;
+    }
+}
+
+/* Для екстрених випадків - ховаємо меню */
+@media (max-width: 360px) {
+    header ul {
+        gap: 0.6rem;
+    }
+    
+    header li a {
+        font-size: 0.65rem;
+    }
+    
+    .logo img {
+        height: 35px;
+    }
+}
+@media (max-width: 768px) {
+    .hero-content {
+        padding: 1.5rem;
+        margin: 0 10px;
+    }
+    
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+    
+    .opening-hours p {
+        font-size: 1rem;
+    }
+    
+    .phone-button {
+        padding: 0.6rem 1.5rem;
+        font-size: 1rem;
+    }
+}
